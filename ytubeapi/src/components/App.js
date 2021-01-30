@@ -20,7 +20,7 @@ class App extends React.Component {
                 part: 'snippet',
                 maxResults: 5,
                 type: 'video',
-                key: KeyboardEvent,
+                key: KEY
             },
         });
 
@@ -37,7 +37,7 @@ class App extends React.Component {
     render() {
         return (
           <div className="ui container">
-              <SearchBar onFormSubmit={this.onFormSubmit} />
+              <SearchBar onFormSubmit={this.onTermSubmit} />
               <div className="ui grid">
                   <div className="ui row">
                       <div className="eleven wide column">
